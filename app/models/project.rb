@@ -22,7 +22,7 @@ class Project < ActiveRecord::Base
 
   validates_length_of           :name,  :maximum=>200
   validates_presence_of         :name
-  validates_presence_of         :customer
+  validates_presence_of         :customer_id
   after_create { |r|
     if r.create_forum && r.company.show_forum
       f = Forum.new
@@ -34,7 +34,8 @@ class Project < ActiveRecord::Base
   }
 
   def full_name
-    "#{customer.name} / #{name}"
+    customer = Customer.find(customer_id)
+    return "#{customer.name} / #{name}"
   end
 
   def to_s

@@ -8,8 +8,7 @@ require "#{Rails.root}/lib/localization"
 
 class ApplicationController < ActionController::Base
   include Misc
-  include DateAndTimeHelper
-
+  include DateAndTimeHelper  
 
   helper :task_filter
   helper :users

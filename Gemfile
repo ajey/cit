@@ -10,7 +10,7 @@ gem 'gchartrb',          '>=0.8', :require=>"google_chart"
 gem 'smurf'
 gem 'paperclip',         '>=2.3.3'
 gem 'json'
-gem 'mysql2',            '>=0.2.3'
+gem  'mysql'
 gem 'acts_as_tree'
 gem 'acts_as_list'
 gem 'dynamic_form'

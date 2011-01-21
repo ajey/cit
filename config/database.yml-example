@@ -1,11 +1,9 @@
 development:
-  adapter: mysql2
-  database: DATABASE
-  host: HOST
-  username: USERNAME
-  password: PASSWORD
-  encoding: utf8
-  SOCKET
+  adapter: mysql
+  database: clock_dev
+  username: root
+  password: root
+  host: localhost
 
 test: &TEST
   adapter: mysql2

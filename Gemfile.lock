@@ -100,7 +100,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
-    mysql2 (0.2.6)
+    mysql (2.8.1)
     nokogiri (1.4.4)
     paperclip (2.3.6)
       activerecord
@@ -187,7 +187,7 @@ DEPENDENCIES
   json
   launchy
   machinist (= 1.0.6)
-  mysql2 (>= 0.2.3)
+  mysql
   paperclip (>= 2.3.3)
   rails (= 3.0.3)
   remotipart

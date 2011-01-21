@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101126083740) do
+ActiveRecord::Schema.define(:version => 20110119150438) do
 
   create_table "access_levels", :force => true do |t|
     t.string   "name"
@@ -725,7 +725,7 @@ ActiveRecord::Schema.define(:version => 20101126083740) do
   create_table "users", :force => true do |t|
     t.string   "name",                       :limit => 200, :default => "",      :null => false
     t.string   "username",                   :limit => 200, :default => "",      :null => false
-    t.string   "password",                   :limit => 200, :default => "",      :null => false
+    t.string   "pass",                       :limit => 200, :default => "",      :null => false
     t.integer  "company_id",                                :default => 0,       :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -774,6 +774,8 @@ ActiveRecord::Schema.define(:version => 20101126083740) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string   "salt"
+    t.string   "crypted_password"
   end
 
   add_index "users", ["autologin"], :name => "index_users_on_autologin"

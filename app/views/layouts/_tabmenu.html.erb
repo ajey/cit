@@ -64,6 +64,9 @@
     <li<%= " class='active'" if active.starts_with?('clients/') %>>
       <%= link_to "#{_('Clients')}", :controller => "clients", :action => 'list' %>
     </li>
+    <li>
+      <%= link_to "Issues(mantis)", "http://golemlabs.dyndns.org/GLTaskTracker/login_page.php", :target => "_blank" %>
+    </li>
     <% end %>
     <% if current_user.use_resources? %>
     <li class="<%= resource_class %>">

@@ -6,7 +6,7 @@ $CONFIG = {
        :replyto => "admin",  # Note that this is not a full email address, just the part before the @
        :from => "admin",  # Note that this is not a full email address, just the part before the @
        :prefix => "[Jobsworth]",
-       :productName => "Jobsworth",
+       :productName => "GNN Central",
        :SSL => false
 }
 
