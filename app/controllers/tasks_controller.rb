@@ -35,9 +35,12 @@ class TasksController < ApplicationController
       format.json { @tasks= tasks_for_list; render :template => "tasks/list.json"}
     end
   end
+  
 
   def calendar
+  
     list_init
+    
     respond_to do |format|
       format.html
       format.json{
@@ -138,7 +141,7 @@ class TasksController < ApplicationController
   end
 
   def view
-      redirect_to :action => 'edit', :id => params[:id]
+    redirect_to :action => 'edit', :id => params[:id]
   end
 
   def edit
@@ -199,7 +202,6 @@ class TasksController < ApplicationController
       ActiveRecord::Base.transaction do
         @changes = @task.changes
         @task.save!
-
         @task.hide_until = nil if params[:task][:hide_until].nil?
         task_due_and_repeat_calculation(params, @task, tz)
         @task.set_users_dependencies_resources(params, current_user)
@@ -589,6 +591,7 @@ protected
       end
     end
   end
+  
   def create_worklogs_for_tasks_create
     WorkLog.build_work_added_or_comment(@task, current_user, params)
     @task.save! #FIXME: it saves worklog from line above
@@ -599,7 +602,9 @@ protected
       @task.work_logs.last.notify()
     end
   end
+  
   def set_last_task(task)
     session[:last_task_id] = task.id
   end
+  
 end
