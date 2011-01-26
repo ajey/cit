@@ -1,5 +1,7 @@
 <div id="content">
+
 	<%= render(:partial => "task_filters/search_filter", :locals => { :redirect_params => { :tag => params[:tag] }}) %>
+	
 	<%= render(:partial => "task_filters/panel") %>
 
 	<ul class="tabs">
@@ -21,16 +23,22 @@
 	link_list += content_tag(:li, link, :class => class_names.join(" "))
 	end
 	-%>
+	
 	<%= link_list.html_safe %>
+	
 	</ul>
    	<div id="groupby" style="display:none">
         	<%= select_tag("chngroup", options_for_changegroup, :onChange => "change_group()") %>
        </div>
        <div id="savefilter" style="display:none"></div>
+       
 	<%= yield(:task_list) %>
 
 	<div id="task">
+	
 	  <%= render_last_task %>
+	  
 	</div>
 </div>
+
 <%= render :partial => "/tags/panel" %>

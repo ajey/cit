@@ -1,4 +1,5 @@
 <div id="dep_<%= dependency.id %>" class="dependency_no">
+
   <% if perms.empty? or perms['edit'].empty? %>
     <a href="#" onclick="jQuery('#dep_<%= dependency.id %>').remove(); return false" ><img src="/images/cross_small.png" class="close-cross" title="<%=_ 'Remove'%>" class="tooltip"></a>
   <% end %>
@@ -9,4 +10,5 @@
   <%= link_to_task(dependency) %>
   <%= hidden_field_tag("dependencies[]", dependency.task_num) %>
   <span class="divider"></span>
+  
 </div>

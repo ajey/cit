@@ -1,4 +1,5 @@
 <fieldset id="task_information">
+
   <div id="snippet" class="ui-icon ui-icon-clipboard">
     <ul class="ui-menu ui-widget ui-widget-content ui-corner-all">
       <% current_user.company.pages.snippets.collect do |snippet| %>
@@ -9,6 +10,7 @@
       <li class="ui-menu-item"><a href="/pages/new">Create a snippet...</a></li>
     </ul>
   </div>
+  
   <%= text_area_tag 'comment', params[:comment], { :rows => 3, :class => 'autogrow'}.merge( perms['comment'] )  %>
 
   <%= cit_submit_tag(@task) %>
@@ -21,9 +23,12 @@
       <% end %>
     </div>
   <% end %>
+  
   <%= render(:partial=> 'upload_container') %>
   <%= render(:partial=> 'worktime_container') %>
   <%= render(:partial => "time_links", :locals => { :task => @task }) %>
   <br clear="both"/>
+  
   <span id="notify_users"></span>
+  
 </fieldset>

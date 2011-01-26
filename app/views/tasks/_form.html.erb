@@ -1,5 +1,7 @@
 <%= hidden_field("task", "id") %>
+
 <%= error_messages_for 'task' %>
+
 <div id="task_sidebar">
   <small><%= link_to(@task.issue_num, :controller => "tasks", :action => "edit", :id => @task.task_num) %><span class="right"><%= "created " + time_ago_in_words(@task.created_at) + " ago" unless @task.created_at.nil?%></span></small>
   <%= render(:partial => "tasks/details") %>
@@ -12,6 +14,7 @@
   <%= render(:partial => "attachments") %>
   <%= render(:partial => "resources") %>
 </div>
+
 <div id="task_addcomment">
   <div>
     <%= render(:partial => "new_comment") %>
@@ -20,14 +23,21 @@
     <div class="page_header">
       <%= _("To-do") %>
       <span id="todo-status-<%= @task.dom_id %>">
+      
         <%= render :partial => "/todos/todos_status", :locals => {:task => @task} %>
+        
       </span>
     </div>
     <div id="todo-container" class="todo-container">
+    
       <%= render :partial => @task.new_record? ? "/todos/todos_clone" : "/todos/todos" %>
+      
     </div>
 
   <div id="task_history">
+  
     <%= render(:partial => "tasks/history") %>
+    
   </div>
+  
 </div>
