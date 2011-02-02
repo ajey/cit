@@ -258,6 +258,12 @@ function resizeGrid() {
 jQuery(document).ready(function() {
 
   jQuery('#calendar').fullCalendar({
+    header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'month,basicWeek'
+     },
+
     events: "/tasks/calendar",
       theme: true,
       height: 350,
@@ -273,6 +279,7 @@ jQuery(document).ready(function() {
       }
 
         });
+
 });
 
 function dueTaskValue(cellvalue) {
