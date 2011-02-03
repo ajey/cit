@@ -192,12 +192,12 @@ end
 
 
 
-@user = User.new
+@user = User.new({:password => password, :password_confirmation => password})
 @company = Company.new
 
 @user.name = name
 @user.username = username
-@user.password = password
+@user.pass = password
 @user.email = email
 @user.time_zone = "Europe/Oslo"
 @user.locale = "en_US"
