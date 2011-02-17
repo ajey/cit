@@ -27,3 +27,7 @@ config/deploy.rb
 .bundle\n
 coverage.data
 coverage
+/.bundle
+/vendor/bundle
+/vendor/ruby
+/.bundle

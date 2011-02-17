@@ -1,0 +1,23 @@
+<div class="page_header">  
+  <%= _"Shouts" %>
+</div>
+
+<div id="content">
+  <% for shout in @shouts %>
+  <div style="border-bottom: 1px solid #eaeaea;padding-bottom: 10px;">
+    <ul>
+      <b>
+       <%if shout.user.id == current_user.id %>
+         Me:
+       <%else%>     
+         <%= shout.user.username.capitalize %>:
+       <% end%>  
+      </b>
+<%= shout.message %></ul>
+    <ul style="color: #CCCCCC;padding-right: 10px;">
+       &nbsp;..... <%= time_ago_in_words(shout.created_at) %> ago
+    </ul>
+   </div>
+  <% end %>
+  <%= "No data found." if @shouts.empty? %>    
+</div>

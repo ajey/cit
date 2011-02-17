@@ -1,9 +1,3 @@
-GIT
-  remote: git://github.com/rails/exception_notification.git
-  revision: 192a49a02d63d28b23ed41cebadfedd490929cf1
-  specs:
-    exception_notification (1.0.0)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -38,6 +32,7 @@ GEM
     activesupport (3.0.3)
     acts_as_list (0.1.2)
     acts_as_tree (0.1.1)
+    annotate (2.4.0)
     arel (2.0.4)
     autotest (4.4.5)
     autotest-rails (4.1.0)
@@ -57,7 +52,6 @@ GEM
       ffi (~> 0.6.3)
     ci_reporter (1.6.3)
       builder (>= 2.1.2)
-    columnize (0.3.2)
     configuration (1.2.0)
     cucumber (0.9.4)
       builder (~> 2.1.2)
@@ -70,15 +64,16 @@ GEM
     culerity (0.2.12)
     daemons (1.1.0)
     database_cleaner (0.6.0)
-    delayed_job (2.1.1)
+    delayed_job (2.1.3)
       activesupport (~> 3.0)
       daemons
     diff-lcs (1.1.2)
     dynamic_form (1.1.3)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    exception_notification_rails3 (1.2.0)
     faker (0.3.1)
-    fastercsv (1.5.3)
+    fastercsv (1.5.4)
     ffi (0.6.3)
       rake (>= 0.8.7)
     gchartrb (0.8)
@@ -87,12 +82,14 @@ GEM
       term-ansicolor (~> 1.0.5)
     i18n (0.4.2)
     icalendar (1.1.5)
+    jquery-rails (0.2.7)
+      rails (~> 3.0)
+      thor (~> 0.14.4)
     json (1.4.6)
     json_pure (1.4.6)
     launchy (0.3.7)
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
-    linecache (0.43)
     machinist (1.0.6)
     mail (2.2.10)
       activesupport (>= 2.3.6)
@@ -100,7 +97,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
-    mysql (2.8.1)
+    mysql2 (0.2.6)
     nokogiri (1.4.4)
     paperclip (2.3.6)
       activerecord
@@ -136,19 +133,19 @@ GEM
     rspec-mocks (2.1.0)
     rspec-rails (2.1.0)
       rspec (~> 2.1.0)
-    ruby-debug (0.10.4)
-      columnize (>= 0.1)
-      ruby-debug-base (~> 0.10.4.0)
-    ruby-debug-base (0.10.4)
-      linecache (>= 0.3)
     ruby-prof (0.9.2)
     rubyzip (0.9.4)
+    rufus-scheduler (2.0.8)
+      tzinfo (>= 0.3.23)
     selenium-webdriver (0.1.0)
       childprocess (= 0.1.4)
       ffi (~> 0.6.3)
       json_pure
       rubyzip
     shoulda (2.11.3)
+    simplecov (0.3.9)
+      simplecov-html (>= 0.3.7)
+    simplecov-html (0.3.9)
     smurf (1.0.5)
       rails (= 3.0.3)
     term-ansicolor (1.0.5)
@@ -165,37 +162,41 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  RedCloth (= 4.2.3)
+  RedCloth
   ZenTest
   acts_as_list
   acts_as_tree
+  annotate
   autotest
   autotest-rails
-  capybara (>= 0.4.0)
+  capybara (= 0.4.0)
   ci_reporter
   cucumber (>= 0.8.5)
   cucumber-rails (>= 0.3.2)
   daemons (= 1.1.0)
   database_cleaner (>= 0.6.0)
-  delayed_job (>= 2.1.1)
+  delayed_job
   dynamic_form
-  exception_notification!
-  faker
+  exception_notification_rails3
+  faker (= 0.3.1)
   fastercsv
   gchartrb (>= 0.8)
+  i18n (= 0.4.2)
   icalendar (>= 1.1.5)
+  jquery-rails
   json
   launchy
   machinist (= 1.0.6)
-  mysql
+  mysql2 (>= 0.2.3)
   paperclip (>= 2.3.3)
   rails (= 3.0.3)
   remotipart
   rspec
   rspec-rails (>= 2.0.0)
-  ruby-debug
   ruby-prof
+  rufus-scheduler
   shoulda (>= 2.11.3)
+  simplecov
   smurf
   test-unit
   tzinfo

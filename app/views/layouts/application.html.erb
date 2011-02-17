@@ -21,6 +21,8 @@
       "template",
       "project_file",
       "widget",
+      "http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js", 
+      "jquery.rails",  
       :cache => "main"
     ) %>
     <%= javascript_include_tag "fullcalendar" %>
@@ -103,6 +105,10 @@
           </div>
           <%= javascript_tag("jQuery('div#work-log span.panel_content').hide();") if worklog_preference == "collapsed" %>
           <%= render(:partial => "pages/panel") %>
+
+          <div id="shoutbox" class="section">
+            <%= render(:partial => "shoutbox/rhs") %>
+          </div>
         </td>
       </tr>
     </table>

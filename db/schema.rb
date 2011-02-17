@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110119150438) do
+ActiveRecord::Schema.define(:version => 20110212200521) do
 
   create_table "access_levels", :force => true do |t|
     t.string   "name"
@@ -553,6 +553,15 @@ ActiveRecord::Schema.define(:version => 20110119150438) do
   add_index "sheets", ["task_id"], :name => "index_sheets_on_task_id"
   add_index "sheets", ["user_id"], :name => "index_sheets_on_user_id"
 
+  create_table "shoutboxes", :force => true do |t|
+    t.string   "name"
+    t.string   "website"
+    t.string   "message"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "statuses", :force => true do |t|
     t.integer  "company_id"
     t.string   "name"
@@ -663,6 +672,7 @@ ActiveRecord::Schema.define(:version => 20110119150438) do
     t.boolean  "scheduled",                         :default => false
     t.integer  "worked_minutes",                    :default => 0
     t.string   "type",                              :default => "Task"
+    t.boolean  "admissible"
   end
 
   add_index "tasks", ["company_id"], :name => "tasks_company_id_index"

@@ -1,0 +1,45 @@
+<% shouts = Shoutbox.find(:all, :order=> "created_at DESC", :limit => 5) %>
+<div class="page_header tooltip" title="<%= _'Shoutbox'%>">
+
+  <%=_ 'Shoutbox'%>
+</div>
+
+<fieldset>
+  <ul class="panel_content">
+    <%  shouts.each do |shout|%>
+      <li>
+       <b>
+       <%if shout.user.id == current_user.id %>
+        Me:
+       <%else%>     
+       <%= shout.user.username.capitalize %>:
+       <% end%>  
+        </b>
+       <%= shout.message %></li>
+      <li style="text-align:right;color: #CCCCCC;padding-right: 10px;"><%= time_ago_in_words(shout.created_at) %> ago</li>
+    <% end %>
+  </ul>
+
+  <form accept-charset="UTF-8" action="/shoutbox/shout" data-remote="true" method="post">
+    <ul class="panel_content" >
+      <!--li>
+        <label for="name">Name</label>
+        <input id="name" name="shoutbox[name]"  value="Anonymous" type="text" style="width:92%" />
+      </li -->
+      <li>
+        <label for="url">Website</label>
+        <input id="url" name="shoutbox[website]"  value="http://" type="text" style="width:95%" />
+      </li>
+      <li>
+        <label for="message">Message</label>
+        <input id="message" name="shoutbox[message]"  type="text" style="width:95%" />
+      </li>
+      <li>
+       <input name="shout" id="shout" title="Post message" value="Shout!" type="submit" />
+       <!--a href="/shoutbox/refresh" data-remote="true" rel="nofollow">Refresh</a -->
+      </li> 
+    </ul>
+    
+  </form>
+</fieldset>
+
