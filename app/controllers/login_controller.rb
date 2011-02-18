@@ -60,6 +60,8 @@ class LoginController < ApplicationController
 
     logged_in.save
     session[:user_id] = logged_in.id
+ #added by avdhoot
+#    cookies[:user_id] = {:value => logged_in.id}
 
     session[:sheet] = nil
     session[:hide_dependencies] ||= "1"

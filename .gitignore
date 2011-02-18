@@ -3,6 +3,7 @@
 \.#*
 *.bak
 \.svn
+*.log
 /index
 /store
 /nbproject
@@ -31,3 +32,6 @@ coverage
 /vendor/bundle
 /vendor/ruby
 /.bundle
+public/cometchat/config.php
+public/cometchat/integration.php
+

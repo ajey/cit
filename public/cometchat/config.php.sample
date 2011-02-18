@@ -10,7 +10,7 @@ include dirname(__FILE__).DIRECTORY_SEPARATOR.'integration.php';
 
 /* BASE URL START */
 
-define('BASE_URL','cometchat/');
+define('BASE_URL','/cometchat/');
 
 /* BASE URL END */
 

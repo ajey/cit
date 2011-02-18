@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110212200521) do
+ActiveRecord::Schema.define(:version => 20110218143930) do
 
   create_table "access_levels", :force => true do |t|
     t.string   "name"
@@ -786,6 +786,7 @@ ActiveRecord::Schema.define(:version => 20110212200521) do
     t.datetime "avatar_updated_at"
     t.string   "salt"
     t.string   "crypted_password"
+    t.integer  "lastactivity",                              :default => 0
   end
 
   add_index "users", ["autologin"], :name => "index_users_on_autologin"
