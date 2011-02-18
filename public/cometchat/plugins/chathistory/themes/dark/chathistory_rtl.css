@@ -1,0 +1,198 @@
+/*
+ * CometChat 
+ * Copyright (c) 2010 Inscripts - support@cometchat.com | http://www.cometchat.com | http://www.inscripts.com
+*/
+
+html, body {
+	background:#333333;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	color:#ffffff;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	direction: rtl;
+}
+
+#container {
+	margin:0 auto;
+	width: 400px;
+ 	padding:20px;
+}
+
+#content {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 15px;
+}
+
+.message {
+	padding: 0px;
+	width: 200px;
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size:11px;
+ 	background-color: #eeeeee;  
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 5px;
+ 
+	-moz-border-radius-topleft:7px;
+	-moz-border-radius-topright:7px;
+}
+
+.messageright {
+	float:right;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 265px;
+/*	border-left: 1px dotted #0f5d7e; */
+}
+
+.messagetime {
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size:9px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.chat {
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size:11px;
+	color: #666666;
+	padding-top:7px;
+	padding-bottom:7px;
+	border-bottom:1px solid #ccc;
+	display: block;
+	width: 100%;
+}
+
+.chat a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a {
+	color: #ffffff;
+}
+
+.chatrequest {
+	float:right;
+	width:70px;
+	padding-right: 5px;
+	height: 12px;
+	overflow: hidden;
+	text-align:left;
+}
+
+.chatmessage {
+	float:right;
+	width: 320px;
+	text-align:right;
+	padding-right:10px;
+}
+
+.chattime {
+	font-size: 10px;
+	float:left;
+	text-align: right;
+	padding-left: 5px;
+}
+
+.chatbg {
+	background-color: #000;
+}
+
+.chatnoline {
+	border-bottom: 0px !important;
+}
+
+.chattopline {
+	border-top:1px solid #ccc;
+}
+
+.chatnowrap {
+	height: default;
+	overflow: show;
+}
+
+.chatbar {
+	font-weight: bold;
+	background-color: #666;
+	border-bottom:1px solid #ccc;
+ 	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size:11px;
+	color: #666666;
+	padding-top:7px;
+	padding-bottom:7px;
+	padding-left: 7px;
+}
+
+ 
+body {
+	overflow-y:scroll;
+}
+
+.chatbar_1 {
+	float:right;
+	padding-right: 7px;
+	text-align: right;
+}
+
+.chatbar_2 {
+	float:left;
+	padding-left:7px;
+}	
+
+.container {
+	width:98%;
+	margin:0 auto;
+	margin-top: 5px;
+}
+
+.container_title {
+	border-left: 1px solid #11648F;
+	border-top: 1px solid #11648F;
+	border-right: 1px solid #11648F;
+	background-color:#3E92BD;
+	color:#fff;
+	padding:5px;
+	font-weight:bold;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size: 12px;
+
+	padding-left:10px;
+	text-align:right;
+	background:url(../../../../themes/dark/images/bgbarplugins.png) repeat;
+	padding-bottom:6px;
+	text-shadow: 1px 1px 0 #000000;
+}
+
+.container_body {
+	border-left: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	background-color:#fffff;
+	color:#eeeeee;
+	padding:5px;
+	font-weight:normal;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size:11px;
+	padding:10px 10px;
+	margin-bottom:10px;
+}

@@ -1,0 +1,388 @@
+/*
+ * CometChat 
+ * Copyright (c) 2010 Inscripts - support@cometchat.com | http://www.cometchat.com | http://www.inscripts.com
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	font-family:'Lucida	Grande',Verdana,Arial,sans-serif;
+	font-size: 11px;
+}
+
+html {
+	overflow: hidden;
+	direction: rtl;
+}
+
+.cometchat_tabcontenttext {
+	height: 200px;
+	border-bottom:1px solid #f6f6f6;
+	padding: 5px;
+	width: 217px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height:265px;
+	width:340px;
+}
+
+.cometchat_ts {
+	color:#ccc;font-size:10px;
+	padding-top:2px;
+	padding-left:5px;
+	padding-right:5px;
+	cursor: default;
+}
+
+.cometchat_ts:hover {
+	color:#333;font-size:10px;padding-top:2px;padding-left:5px;
+}
+.cometchat_chatboxmessage {
+	margin-left:1em;
+}
+
+.cometchat_chatboxmessagefrom {
+	font-weight: bold;
+}
+
+.cometchat_textarea {
+	border: 0px;
+	height: 18px;
+	overflow: hidden;
+	font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size: 11px;
+	color: #444444;
+	background-color: #ffffff;
+	outline:none;
+	resize: none;
+}
+
+.cometchat_tabpopup {
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size:11px;
+	float:left;
+	width:350px;
+	height:300px;
+	border-right:1px solid #ccc;
+}
+
+.cometchat_userlist_hover {
+	background-color: #d8f2ff !important;
+	color: #000000;
+}
+
+ 
+.cometchat_userlist {
+	cursor: pointer;
+	height: 20px;
+	background-color: #ffffff;
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size:11px;
+	clear: both;
+}
+
+.cometchat_userscontentname {
+ 	padding-right: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+
+}
+
+.cometchat_chatroomselected {
+	background-color:#eee;
+	font-weight: bold;
+}
+
+
+
+.chatbox {
+	float:right;
+	width:149px;
+	height:300px;
+	padding-top:5px;
+}
+
+#chatrooms {
+	height:271px !important;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+.topbar {
+	width: 100%;
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size:11px;
+	float:left;
+	background-color: #666666;
+	 
+}
+
+.topbar_text {
+	padding:10px;
+	background-color: #eeeeee;
+	border-bottom: 1px solid #ccc;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	height: 12px;
+}
+
+.topbar_text a {
+	color: #333;
+}
+
+.welcomemessage {
+	float: right;
+}
+ 
+ol.tabs {
+ 	float:left;
+	height:24px;
+	overflow:hidden;
+	width:5000px;
+}
+
+ol, ul {
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+}
+
+.tabs li {
+	float:left;
+	margin-right:10px;
+}
+
+.tabs li a {
+	background-color:#666666;
+	color:#eeeeee;
+	display:block;
+	font-size:110%;
+	font-weight:bold;
+	margin-bottom:0;
+ 	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+	padding:5px 7px;
+	text-decoration:none;
+	text-transform:lowercase;
+}
+
+.tabs li a:hover {
+	background-color:#333;
+	color:#FFFFFF;
+}
+
+
+.tab_selected a{
+	background-color:#eeeeee !important;
+	color:#333333 !important;
+}
+
+.content_div {
+	
+}
+
+.content_div a {
+	color: #287197;
+}
+
+.lobby_rooms {
+	background-color: #fff;
+	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.lobby_room {
+	border-bottom:1px solid #CCCCCC;
+	color:#666666;
+	display:block;
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size:11px;
+	padding-bottom:7px;
+	padding-top:7px;
+	width: 100%;
+	cursor: pointer;
+	height: 15px;
+}
+
+#currentroom {
+	padding: 0px;
+
+}
+
+#currentroom_users {
+	width: 134px;
+	float: right;
+	border-left: 1px dotted #ccc;
+	padding-left: 5px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#currentroom_convo {
+	overflow-y: auto;
+	overflow-x: hidden;
+
+}
+
+#currentroom_convotext {
+	padding: 5px;
+}
+
+.cometchat_tabcontentinput {
+	padding: 4px 5px 0px 25px;
+	border: 0px;
+	border-top: 1px solid #cccccc;
+	background: url(../../../../themes/default/images/cometchat.png) no-repeat top left;
+	_background: url(../../../../themes/default/images/cometchat.gif) no-repeat top left;
+	background-position: 5px -25px;
+	outline: none;
+
+}
+
+#currentroom_left {
+	float:left;
+
+}
+
+body, html {
+	margin:0; 
+	padding:0; 
+	height:100%; 
+}
+
+#container { 
+    position:relative; /* needed for footer positioning*/ 
+    margin:0 auto; /* center, not in IE5 */ 
+    width:100%; 
+    height:auto !important; /* real browsers */ 
+    height:100%; /* IE6: treaded as min-height*/ 
+    min-height:100%; /* real browsers */ 
+} 
+
+#lobby {
+	height: 100%;
+}
+
+.cometchat_chatboxalert {
+	color: #666;
+}
+
+.create {
+	padding: 5px;
+}
+
+.create_name {
+	width: 70px;
+	text-align: right;
+	float: left;
+	padding-right: 10px;
+}
+.create_value {
+	float: left;
+}
+
+.create_input {
+	width: 200px;
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size:11px;
+}
+
+.password_hide {
+	display: none;
+}
+
+.popouterror {
+	margin:5%;
+	padding:5%;
+	border: 1px dotted #333;
+	background-color: #fff;
+	width:80%;
+	text-align: center;
+}
+
+.popouterror a{
+	background-color:#333;
+	color:#fff;
+	font-size:9px;
+ 	padding:5px 7px;
+	text-decoration:none;
+}
+
+.invitesuccess {
+	padding-left:5px;
+	padding-top:85px;
+	padding-bottom:5px;
+	text-align:center;
+	font-weight:bold;
+}
+
+.invitesuccessclose {
+	color:#999;
+	font-weight:normal;
+}
+
+.invitetitle {
+	color:white;padding-left:10px;margin-top:8px;font-size:11px;font-weight:bold;float:left;
+}
+
+.invitebutton {
+	color:white;background-color:#333;border:1px solid #000;float:right;padding:2px;margin:3px;margin-right:10px;font-size:11px;
+}
+
+.lobby_room_1 {
+	float:right;
+	padding-right:10px;
+}
+
+.lobby_room_2 {
+	float:left;
+	padding-left:10px;
+	width:70px;
+	text-align:right;
+}
+
+.lobby_room_3 {
+	float:left;
+	padding-left:10px;
+}
+
+.lobby_room_4 {
+	float:left;
+	padding-left:10px;
+}
+
+.invite_1 {
+	cursor:pointer;position:relative;height:30px;float:left;width:170px;border:1px dotted #ccc;padding:3px;margin:4px;
+}
+
+.invite_2 {
+	float:right;
+}
+
+.invite_3 {
+	float:right;padding-right:10px;width:125px;
+}
+
+.invite_4 {
+	position:absolute;left:4px;top:4px;
+}
+
+.container {
+	padding: 20px;
+}

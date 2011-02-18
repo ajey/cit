@@ -1,0 +1,70 @@
+/*
+ * CometChat 
+ * Copyright (c) 2010 Inscripts - support@cometchat.com | http://www.cometchat.com | http://www.inscripts.com
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+color:#ffffff;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+    text-align: center;
+
+}
+
+.small {
+	font-weight:bold;
+}
+
+ul {
+  float: left;
+  width: 100%; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+li {
+  text-align: left;
+  float: left;
+  width: 102px;
+  margin: 0;
+  height: 20px;
+  background-image: url(bullet.png);
+  background-position: 0 -1px;
+  background-repeat: no-repeat;
+  padding: 0 0 0 1.5em; 
+  cursor: pointer;
+} 
+
+.container {
+	background-color:#fffff;
+	color:#eeeeee;
+	font-weight:normal;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size:11px;
+	padding:15px 10px;
+	padding-bottom:0px;
+	text-align:left;
+}
+
+.container a{
+	color: #11648F;
+}
+
+.translating {
+	display:none;
+}

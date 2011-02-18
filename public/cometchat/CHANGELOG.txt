@@ -1,0 +1,182 @@
+-------------------------------------------------------------
+ CometChat Change Log
+-------------------------------------------------------------
+
+-------------------------------------------------------------
+ 2.0.4
+-------------------------------------------------------------
+
+Features
++ iPhone/iPad web app for Premium/Platinum Edition
++ Improved screensharing plugin (Platinum Edition)
+
+Bug fixes
++ Special characters fix for announcements
++ Create custom tray icon fix
++ Auto linking bug fix
++ Admin session fix
+
+-------------------------------------------------------------
+ 2.0.3
+-------------------------------------------------------------
+
+Features
++ Ability to update base URL using administration panel
+
+Bug fixes
++ Miscellaneous bug fixes
+
+-------------------------------------------------------------
+ 2.0.2
+-------------------------------------------------------------
+
+Features
++ CometService compatible
+
+-------------------------------------------------------------
+ 2.0.0
+-------------------------------------------------------------
+
+Features
++ Streamlined installation procedure
++ Ability to hide CometChat bar (by user and for non-logged in users)
++ Improved themes
++ Ability to send announcements in real-time
++ Enhanced support for RTL languages
++ Full UTF-8 support
++ Popup notification when user comes online/goes offline
++ Ability for users to disable notification
++ Improved licensing technology
++ Improved support for Internet Explorer 6
++ Improved hyperlinking of domains in messages
++ Improved status messages feature
++ Better notification of new messages when user is away
++ Option to show bar above flash objects
++ Ability to switch between friends and online users
++ JavaScript speed enhancements & optimizations
++ Enhanced JS API
++ Miscellaneous bug fixes
++ Database optimization
++ Improved CRONJOB
++ Advanced administration panel
+
+Plugins
++ Ability transfer files in any format
++ New Screen Sharing plugin
++ Ability to save conversations
++ New smileys plugin
++ New transliterate plugin
+
+Modules
++ Advanced chatrooms module
++ Improved single player games module
++ Improved share this functionaliy
++ Improved Facebook Fan Page
++ Scroll to top module
+
+-------------------------------------------------------------
+ 1.6.0
+-------------------------------------------------------------
+
+Features
++ Plugins pre-loaded with CometChat
+
+-------------------------------------------------------------
+ 1.5.123
+-------------------------------------------------------------
+
+Bug fixes
++ Chatrooms functionality
++ Simplified installation process
+
+-------------------------------------------------------------
+ 1.5.112
+-------------------------------------------------------------
+
+Enhancements
++ Streamlined installation process
+
+Bug fixes
++ YouTube link feature
++ Chatrooms functionality
++ Miscellaneous reported bugs
+
+-------------------------------------------------------------
+ 1.5.0
+-------------------------------------------------------------
+
+Features
++ Avatar support 
++ Gravatar support for sites with no avatars
++ Ability to go to user profile on clicking of name (in chatbox)
++ Youtube video integration
++ Ability to display first name only in chat conversations
++ Overall chat speed enhancements
++ Ability to login by clicking on yellow alert icon
++ Title-bar update when new message arrives
++ Different colors for incoming and outgoing messages
++ Improved synchronization with multiple open windows
++ Plugins/modules support
++ Themes support
+
+Themes
++ Default theme
++ Dark theme
+
+Administration features
++ Spy: View users chatting in real-time!
++ Logs: View conversation logs of users
++ Chatrooms: Ability to specify default chatrooms
+
+Bundled Modules
++ Chatroom module
+
+Bundled Plugins
++ Timestamp Plugin: Display time when messages arrive
++ Send File Plugin: Ability to send files to users
++ Clear Chat History Plugin: Ability to clear chat window
++ View History Plugin: View user chat logs
+
+API
++ chatWith: Allows you to add a link on your page to chat with users (including users not part of friends list)
++ sendMessage: Allows you to send a message to a user (from the logged-in user)
+
+Bug fixes
++ Auto-linking bug fix
++ Better support for Internet Explorer
++ Miscellaneous bug fixes
+
+-------------------------------------------------------------
+ 1.2
+-------------------------------------------------------------
+
+Fix: 10x Speed Enhancements
+Feature: Custom popup boxes
+
+-------------------------------------------------------------
+ 1.1
+-------------------------------------------------------------
+
+Feature: Custom icons feature (left-side)
+Feature: Auto-parsing of links
+Feature: Smileys
+Feature: Bad-word filter
+Feature: Internationalization option
+Feature: Sound alerts (user-level disable feature)
+Feature: Auto-popup of boxes feature
+Feature: Added various customization options (fine-tweaking)
+Bug: Charset fix
+Bug: Newline character fix
+
+-------------------------------------------------------------
+ 1.0.1
+-------------------------------------------------------------
+
+Bug: \' slashes bug
+Bug: Slowing of script due to large number of friends
+
+-------------------------------------------------------------
+ 1.0.0
+-------------------------------------------------------------
+
+Initial release of script

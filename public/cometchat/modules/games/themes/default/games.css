@@ -1,0 +1,128 @@
+/*
+ * CometChat 
+ * Copyright (c) 2010 Inscripts - support@cometchat.com | http://www.cometchat.com | http://www.inscripts.com
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+    text-align: center;
+	overflow:hidden;
+}
+
+.small {
+	font-weight:bold;
+}
+
+ul {
+  float: left;
+  width: 100%; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top:20px;
+}
+ 
+li {
+  text-align: left;
+  float: left;
+  width: 125px;
+  margin: 0;
+  cursor: pointer;
+  font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
+  font-size:11px;
+  color: #333;
+  padding-top:8px;
+  padding-bottom:8px;
+  padding-left:15px;
+  list-style: none;
+} 
+
+li:hover {
+	background-color:#eee;
+	color: #000;
+}
+
+.catselected {
+	background-color: #a8e9ff;
+	color: #000;
+	font-weight:bold;
+}
+
+.container {
+	background-color:#fffff;
+	color:#333;
+	font-weight:normal;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size:11px;
+	padding-bottom:0px;
+	text-align:left;
+}
+
+#categories {
+	width: 140px;
+	float: left;
+	padding-top: 2px;
+}
+
+#games {
+	width: 358px;
+	float:left;
+	overflow-y:auto;
+	overflow-x:hidden;
+	height: 300px;
+	border-left: 1px dotted #4d91bf;
+}
+
+#games img {
+	width:80px;
+	height:80px;
+	margin-bottom:2px;
+}
+
+.gamelist {
+	padding:5px;
+	text-align:center;
+	overflow:hidden;
+	font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size:10px;
+	color:#333;
+	float:left;
+	width:100px;
+	height:100px;
+	cursor: pointer;
+}
+
+.gamelist:hover {
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+
+.gameslist:hover {
+	background-color:#eee;
+}
+
+#loader {
+	position: absolute;
+	top:5px;
+	right:5px;
+	background-image:url(loader.gif);
+	width:16px;
+	height:16px;
+	display:none;
+}

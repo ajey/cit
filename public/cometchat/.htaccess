@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+ RewriteEngine Off
+</IfModule>
+
+<IfModule mod_headers.c>
+ <FilesMatch "\.(gif|jpg|png|css|swf|php)$">
+  Header set Cache-Control "max-age=29030400"
+ </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+ ExpiresActive On
+ ExpiresDefault A604800
+ ExpiresByType text/css A604800
+ ExpiresByType image/gif A604800
+ ExpiresByType image/png A604800
+ ExpiresByType image/jpeg A604800
+ ExpiresByType application/x-shockwave-flash A604800
+</IfModule>
